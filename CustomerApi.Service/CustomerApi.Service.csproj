@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerApi.Data\CustomerApi.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\..\.nuget\packages\automapper\9.0.0\lib\netstandard2.0\AutoMapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
